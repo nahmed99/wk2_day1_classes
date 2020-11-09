@@ -11,7 +11,7 @@ class BankAccount:
         self.balance = input_balance
         self.type = input_type
 
-        # The underscore ( _ ) *indicates* that this variable should 
+        # The underscore ( '_' in "_rates") *indicates* that this variable should 
         # NOT be accessed from outside of the class. It not enforceable.
         self._rates = {
             "personal" : 10,
