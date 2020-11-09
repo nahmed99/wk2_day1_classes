@@ -6,7 +6,7 @@ class BankAccount:
     # self needs to be the first parameter in ALL methods in a class!
     def __init__(self, input_holder_name, input_balance, input_type):
 
-        #instance variables
+        #instance variables - all needs to be prefixed by "self."
         self.holder_name = input_holder_name
         self.balance = input_balance
         self.type = input_type
