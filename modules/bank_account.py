@@ -11,15 +11,26 @@ class BankAccount:
         self.balance = input_balance
         self.type = input_type
 
+        # The underscore ( _ ) *indicates* that this variable should 
+        # NOT be accessed from outside of the class. It not enforceable.
+        self._rates = {
+            "personal" : 10,
+            "business" : 50
+        }
+
 
     # methods: functions in classes
     def pay_in(self, amount):
         self.balance += amount
 
 
-
     def pay_monthly_fee(self):
-        if self.type == "business":
-            self.balance -= 50
-        elif self.type == "personal":
-            self.balance -= 10        
+        self.balance -= self._rates[self.type]
+
+        # The line above replaces all of the code below
+        #
+        # if self.type == "business":
+        #     self.balance -= 50
+        # elif self.type == "personal":
+        #     self.balance -= 10        
+        #
