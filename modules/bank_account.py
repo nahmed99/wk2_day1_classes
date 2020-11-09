@@ -17,5 +17,9 @@ class BankAccount:
         self.balance += amount
 
 
+
     def pay_monthly_fee(self):
-        self.balance -= 50
+        if self.type == "business":
+            self.balance -= 50
+        elif self.type == "personal":
+            self.balance -= 10        

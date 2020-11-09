@@ -14,6 +14,10 @@ account_2.pay_in(250)
 print(f"balance after pay_in: {account_2.balance}")
 
 
+print("balance before pay_monthly_fee: ", account.balance)
+account.pay_monthly_fee()
+print(f"balance after pay_monthly_fee: {account.balance}")
+
 print("balance before pay_monthly_fee: ", account_2.balance)
 account_2.pay_monthly_fee()
 print(f"balance after pay_monthly_fee: {account_2.balance}")
